@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Peretto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Colocar uma foto minha, fazer deploy do projeto 4, adicionar responsividade-->
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg navbar-light p-0">
+            <div id="container-topo" class="container p-0">
+                <div class="sub-container">
+                    <h1>Pedro H</h1>
+                <h4>frontend dev</h4>
+                </div>
+                <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguer">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menuHamburguer" class="collapse navbar-collapse">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container p-0">
+            <picture>
+                <img src="https://picsum.photos/300">
+            </picture>
+            <h2>Sobre mim</h2>
+            <p>Me chamo Pedro Henrique, tenho 19 anos e sou de São Paulo.
+            Sou um profissional apaixonado por tecnologia e inovação desde pequeno, e sempre em busca de novos desafios e 
+            aprendizado contínuo. 
+            Possuo habilidades sólidas em marketing e design, e estou ingressando em desenvolvimento frontend com experiência em 
+            ferramentas como figma, jquery, bootstrap, git e github. Minha abordagem é focada em soluções eficientes, colaboração e 
+            aprimoramento constante. Tenho facilidade em trabalhar em equipe, sou um ótimo líder, resolvo problemas de forma 
+            criativa e me adapto a diferentes cenários e demandas.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container p-0">
+            <h2>Meus projetos</h2>
+            <div class="row">
+                <div class="col-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Projeto 1
+                        </header>
+                        <img src="./content/FotoProjeto1.JPG" alt="Foto do projeto 1">
+                        <div class="card-body">
+                            <p class="card-text">Projeto feito com Bootstrap para simular página de notícias</p>
+                            <a class="btn btn-primary" href="https://projeto1-omega-two.vercel.app">Veja aqui</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <header class="card-header">
+                            Projeto 2
+                        </header>
+                        <img src="./content/FotoProjeto2.JPG" alt="Foto do projeto 2">
+                        <div class="card-body">
+                            <p class="card-text">Projeto feito com HTML e CSS para simular página de uma loja online</p>
+                            <a class="btn btn-primary" href="https://projeto2-ashen.vercel.app">Veja aqui</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <header class="card-header">
+                            Projeto 3
+                        </header>
+                        <img src="./content/FotoProjeto3.JPG" alt="Foto do projeto 3">
+                        <div class="card-body">
+                            <p class="card-text">Projeto de uma galeira online feito com HTML, CSS e JQuery</p>
+                            <a class="btn btn-primary" href="https://projeto3-lime.vercel.app">Veja aqui</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <header class="card-header">
+                            Projeto 4
+                        </header>
+                        <img src="./content/FotoProjeto3.JPG" alt="Foto do projeto 4">
+                        <div class="card-body">
+                            <p class="card-text">Projeto 1 epocepocpoejieiopjceoicjoeicjeiopcjioejeeoijlkhiuiuobi</p>
+                            <a class="btn btn-primary" href="#">Veja aqui</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <header class="card-header">
+                            Projeto 5
+                        </header>
+                        <img src="./content/FotoProjeto5.JPG" alt="Foto do projeto 5">
+                        <div class="card-body">
+                            <p class="card-text">Projeto de uma lista de contatos online feito com HTML, CSS e JQuery</p>
+                            <a class="btn btn-primary" href="https://agenda-contatos-one-tau.vercel.app">Veja aqui</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <a id="curriculo" class="h7" data-bs-toggle="modal" data-bs-target="#modal">Clique aqui para baixar meu currículo!</a>
+            <div id="modal" class="modal" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Meu currículo</h5>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img src="https://picsum.photos/350">
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a class="btn btn-primary" href="./content/GithubSVG.svg" download="GithubSVG">Baixar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Entre em contato</h2>
+                    <form action="">
+                        <label class="form-label" for="nome">Seu nome:</label>
+                        <input class="form-control" type="text" id="nome" name="nome" required 
+                        oninvalid="this.setCustomValidity('Por favor, preencha seu nome e sobrenome')" oninput="this.setCustomValidity('')">
+                        <label for="email" class="form-label">Seu e-mail:</label>
+                        <input type="email" id="email" class="form-control" name="email" required 
+                        oninvalid="this.setCustomValidity('Por favor, preencha seu email corretamente')" oninput="this.setCustomValidity('')">
+                        <label for="mensagem" class="form-label">Sua mensagem:</label>
+                        <textarea id="mensagem" class="form-control" name="mensagem" required 
+                        oninvalid="this.setCustomValidity('Por favor, deixe sua mensagem!')" oninput="this.setCustomValidity('')"></textarea>
+                        <button class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="https://github.com/PedroHPeretto">
+                <img src="./content/GithubSVG.svg">
+            </a>
+            <a href="https://linkedin.com/in/pedrokaim">
+                <img src="./content/LinkedinSVG.svg">
+            </a>
+            <a href="https://wa.me/5511989949572?text=Olá Pedro, vim de seu site">
+                <img src="./content/WhatsappSVG.svg">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./lib/jquery-3.7.1.slim.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
