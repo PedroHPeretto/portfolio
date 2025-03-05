@@ -11,17 +11,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!--Colocar uma foto minha, fazer deploy do projeto 4, adicionar responsividade-->
-
 <body>
-    <header>
+    <header class="sticky-top">
         <div class="navbar navbar-expand-lg navbar-light p-0">
             <div id="container-topo" class="container p-0">
                 <div class="sub-container">
                     <h1>Pedro H</h1>
-                <h4>frontend dev</h4>
+                    <h4>frontend dev</h4>
                 </div>
-                <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguer">
+                <button id="menu" class="navbar-toggler p-2 p-md-4" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguer">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav id="menuHamburguer" class="collapse navbar-collapse">
@@ -41,20 +39,24 @@
         </div>
     </header>
 
-    <section id="sobre">
+    <section id="sobre">    
         <div class="container p-0">
-            <picture>
-                <img src="https://picsum.photos/300">
-            </picture>
-            <h2>Sobre mim</h2>
-            <p>Me chamo Pedro Henrique, tenho 19 anos e sou de São Paulo.
-            Sou um profissional apaixonado por tecnologia e inovação desde pequeno, e sempre em busca de novos desafios e 
-            aprendizado contínuo. 
-            Possuo habilidades sólidas em marketing e design, e estou ingressando em desenvolvimento frontend com experiência em 
-            ferramentas como figma, jquery, bootstrap, git e github. Minha abordagem é focada em soluções eficientes, colaboração e 
-            aprimoramento constante. Tenho facilidade em trabalhar em equipe, sou um ótimo líder, resolvo problemas de forma 
-            criativa e me adapto a diferentes cenários e demandas.
-            </p>
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <img src="./content/FotoCurriculo.jpg">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <h2>Sobre mim</h2>
+                    <p>Me chamo Pedro Henrique, tenho 19 anos e sou de São Paulo.
+                    Sou um profissional apaixonado por tecnologia e inovação desde pequeno, e sempre em busca de novos desafios e 
+                    aprendizado contínuo. 
+                    Possuo habilidades sólidas em marketing e design, e estou ingressando em desenvolvimento frontend com experiência em 
+                    ferramentas como figma, jquery, bootstrap, git e github. Minha abordagem é focada em soluções eficientes, colaboração e 
+                    aprimoramento constante. Tenho facilidade em trabalhar em equipe, sou um ótimo líder, resolvo problemas de forma 
+                    criativa e me adapto a diferentes cenários e demandas.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -62,17 +64,19 @@
         <div class="container p-0">
             <h2>Meus projetos</h2>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="card">
                         <header class="card-header">
                             Projeto 1
                         </header>
                         <img src="./content/FotoProjeto1.JPG" alt="Foto do projeto 1">
                         <div class="card-body">
-                            <p class="card-text">Projeto feito com Bootstrap para simular página de notícias</p>
-                            <a class="btn btn-primary" href="https://projeto1-omega-two.vercel.app">Veja aqui</a>
+                            <p class="card-text">Projeto feito com Bootstrap para simular página de notícias gerais online</p>
+                            <a class="btn btn-primary w-100" href="https://projeto1-omega-two.vercel.app">Veja aqui</a>
                         </div>
                     </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="card">
                         <header class="card-header">
                             Projeto 2
@@ -80,42 +84,60 @@
                         <img src="./content/FotoProjeto2.JPG" alt="Foto do projeto 2">
                         <div class="card-body">
                             <p class="card-text">Projeto feito com HTML e CSS para simular página de uma loja online</p>
-                            <a class="btn btn-primary" href="https://projeto2-ashen.vercel.app">Veja aqui</a>
+                            <a class="btn btn-primary w-100" href="https://projeto2-ashen.vercel.app">Veja aqui</a>
                         </div>
                     </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="card">
                         <header class="card-header">
                             Projeto 3
                         </header>
-                        <img src="./content/FotoProjeto3.JPG" alt="Foto do projeto 3">
+                        <img src="./content/FotoProjeto4.JPG" alt="Foto do projeto 3">
                         <div class="card-body">
-                            <p class="card-text">Projeto de uma galeira online feito com HTML, CSS e JQuery</p>
-                            <a class="btn btn-primary" href="https://projeto3-lime.vercel.app">Veja aqui</a>
+                            <p class="card-text">Projeto de uma página responsiva feito com Bootstrap</p>
+                            <a class="btn btn-primary w-100" href="https://projeto4-sigma.vercel.app">Veja aqui</a>
                         </div>
                     </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="card">
                         <header class="card-header">
                             Projeto 4
                         </header>
-                        <img src="./content/FotoProjeto3.JPG" alt="Foto do projeto 4">
+                        <img src="./content/FotoProjeto6.JPG" alt="Foto do projeto 4">
                         <div class="card-body">
-                            <p class="card-text">Projeto 1 epocepocpoejieiopjceoicjoeicjeiopcjioejeeoijlkhiuiuobi</p>
-                            <a class="btn btn-primary" href="#">Veja aqui</a>
+                            <p class="card-text">Projeto de uma página de um restaurante feito com Bootstrap</p>
+                            <a class="btn btn-primary w-100" href="https://projeto6-nu.vercel.app">Veja aqui</a>
                         </div>
                     </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="card">
                         <header class="card-header">
                             Projeto 5
                         </header>
                         <img src="./content/FotoProjeto5.JPG" alt="Foto do projeto 5">
                         <div class="card-body">
-                            <p class="card-text">Projeto de uma lista de contatos online feito com HTML, CSS e JQuery</p>
-                            <a class="btn btn-primary" href="https://agenda-contatos-one-tau.vercel.app">Veja aqui</a>
+                            <p class="card-text">Projeto de uma lista de contatos online feito com JQuery</p>
+                            <a class="btn btn-primary w-100" href="https://agenda-contatos-one-tau.vercel.app">Veja aqui</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card">
+                        <header class="card-header">
+                            Projeto 6
+                        </header>
+                        <img src="./content/FotoProjeto5.JPG" alt="Foto do projeto 6">
+                        <div class="card-body">
+                            <p class="card-text">Projeto de uma lista de contatos online feito com JQuery</p>
+                            <a class="btn btn-primary w-100" href="https://agenda-contatos-one-tau.vercel.app">Veja aqui</a>
                         </div>
                     </article>
                 </div>
             </div>
-            <a id="curriculo" class="h7" data-bs-toggle="modal" data-bs-target="#modal">Clique aqui para baixar meu currículo!</a>
+            <a id="curriculo" class="h7 d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#modal">Clique aqui para baixar meu currículo!</a>
             <div id="modal" class="modal" data-bs-backdrop="static">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -124,10 +146,10 @@
                             <button class="btn btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="https://picsum.photos/350">
+                            <img src="./content/CurriculoFoto.JPG">
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <a class="btn btn-primary" href="./content/GithubSVG.svg" download="GithubSVG">Baixar</a>
+                            <a class="btn btn-primary w-100" href="./content/Pedro Kaim Curriculo.pdf" download="Pedro Kaim Curriculo">Baixar</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +160,7 @@
     <section id="contato">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <h2>Entre em contato</h2>
                     <form action="">
                         <label class="form-label" for="nome">Seu nome:</label>
@@ -150,7 +172,7 @@
                         <label for="mensagem" class="form-label">Sua mensagem:</label>
                         <textarea id="mensagem" class="form-control" name="mensagem" required 
                         oninvalid="this.setCustomValidity('Por favor, deixe sua mensagem!')" oninput="this.setCustomValidity('')"></textarea>
-                        <button class="btn btn-primary">Enviar</button>
+                        <button id="formButton" class="btn btn-primary w-100">Enviar</button>
                     </form>
                 </div>
             </div>

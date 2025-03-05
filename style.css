@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 300px;
+    max-width: 85vw;
 }
 
 /* header */
@@ -65,6 +65,8 @@ ul {
 #sobre img {
     border: 2px solid rgb(77, 77, 77);
     border-radius: 5px;
+    height: auto;
+    width: 100%;
 }
 
 /* portfolio */
@@ -89,6 +91,15 @@ ul {
     font-weight: bold;
     color: blue;
     margin-bottom: 20px;
+}
+
+#curriculo:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 161);
+}
+
+.modal-body img {
+    height: 350px;
 }
 
 /* contato */
@@ -123,7 +134,7 @@ footer .container a img {
 footer .container {
     display: flex;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 80vw;
     padding: 10px 0;
     margin: 0
 }
@@ -132,4 +143,128 @@ footer .container a {
     padding: 10px;
     border: 1px solid rgb(77, 77, 77);
     border-radius: 100%;
+}
+
+@media (min-width: 768px) {
+
+    /* header */
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .sub-container h4 {
+        font-size: 29.5px;
+        margin-top: -19px;
+    }
+
+    #menuHamburguer a {
+        font-size: 1.5rem;
+    }
+
+    /* sobre */
+
+    #sobre img {
+        margin-bottom: 20px;
+    }
+
+    #sobre h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #sobre p {
+        font-size: 1.1rem;
+    }
+
+    /* portfolio */
+
+    #portfolio h2 {
+        font-size: 2rem;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    .card-body p,
+    .card-body a {
+        font-size: 1.2rem;
+    }
+
+    #curriculo {
+        font-size: 1.5rem;
+    }
+
+    /* contato */
+
+    #contato h2 {
+        font-size: 2rem;
+    }
+
+    .form-label,
+    #formButton {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        padding: 15px;
+    }
+
+    #nome,
+    #email,
+    #mensagem {
+        font-size: 1.2rem;
+    }
+
+    /* footer */
+
+    footer .container a img {
+        max-width: 50px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    /* header */
+
+    #menuHamburguer {
+        display: flex;
+        justify-content: end;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    .sub-container h4 {
+        font-size: 35px;
+        margin-top: -25px;
+    }
+
+    #menuHamburguer a {
+        font-size: 2rem;
+    }
+
+    /* sobre */
+
+    #sobre h2 {
+        font-size: 2.5rem;
+    }
+
+    #sobre p {
+        font-size: 1.8rem;
+    }
+
+    /* portfolio */
+
+    #portfolio h2 {
+        font-size: 2.5rem;
+    }
+
+    /* contato */
+
+    /* footer */
+
 }
